@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="dojo1_calc" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IyW-ff-Gmr" customClass="RoundButton" customModule="dojo1_calc" customModuleProvider="target">
+                                <rect key="frame" x="20" y="712" width="70" height="70"/>
+                                <color key="backgroundColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="NXe-ED-cae"/>
+                                    <constraint firstAttribute="height" constant="70" id="wy8-4w-FQr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="1"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonsNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="US3-u1-l3Z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIL-OK-CWk" customClass="RoundButton" customModule="dojo1_calc" customModuleProvider="target">
+                                <rect key="frame" x="110" y="712" width="70" height="70"/>
+                                <color key="backgroundColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="JmN-8q-Lpm"/>
+                                    <constraint firstAttribute="width" constant="70" id="Xgi-ZK-hRe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="2"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonsNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gd6-ZM-8Z2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yn6-Qn-ndC" customClass="RoundButton" customModule="dojo1_calc" customModuleProvider="target">
+                                <rect key="frame" x="200" y="712" width="70" height="70"/>
+                                <color key="backgroundColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="ZZs-ag-FZw"/>
+                                    <constraint firstAttribute="width" constant="70" id="jkG-1q-cHa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="3"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonsNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R1Y-jB-Oaq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O39-SA-pWx" customClass="RoundButton" customModule="dojo1_calc" customModuleProvider="target">
+                                <rect key="frame" x="200" y="802" width="70" height="70"/>
+                                <color key="backgroundColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="oJ9-Gl-cqY"/>
+                                    <constraint firstAttribute="width" constant="70" id="sPs-Nl-cG4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title=","/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonsNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g3F-jr-f98"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ap-0n-L1d" customClass="RoundButton" customModule="dojo1_calc" customModuleProvider="target">
+                                <rect key="frame" x="20" y="622" width="70" height="70"/>
+                                <color key="backgroundColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="PpL-5T-HPW"/>
+                                    <constraint firstAttribute="height" constant="70" id="WNA-HL-Cx5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="4"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonsNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="faR-FE-DHB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ptq-VD-8eW" customClass="RoundButton" customModule="dojo1_calc" customModuleProvider="target">
+                                <rect key="frame" x="110" y="622" width="70" height="70"/>
+                                <color key="backgroundColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="7YX-qF-8s7"/>
+                                    <constraint firstAttribute="width" constant="70" id="AaD-dy-fsW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="5"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonsNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="az4-hf-3t7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Yj-uD-Qd2" customClass="RoundButton" customModule="dojo1_calc" customModuleProvider="target">
+                                <rect key="frame" x="200" y="622" width="70" height="70"/>
+                                <color key="backgroundColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="WXS-1q-Spr"/>
+                                    <constraint firstAttribute="height" constant="70" id="wiL-hB-pQa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="6"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonsNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sqw-aP-xY6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2x-L1-ziG" customClass="RoundButton" customModule="dojo1_calc" customModuleProvider="target">
+                                <rect key="frame" x="110" y="532" width="70" height="70"/>
+                                <color key="backgroundColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Eyu-gh-aSn"/>
+                                    <constraint firstAttribute="width" constant="70" id="gdC-dn-V8s"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="8"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonsNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ygu-Es-LZq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UsR-zu-B9i" customClass="RoundButton" customModule="dojo1_calc" customModuleProvider="target">
+                                <rect key="frame" x="200" y="532" width="70" height="70"/>
+                                <color key="backgroundColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="K8a-xF-qjL"/>
+                                    <constraint firstAttribute="height" constant="70" id="yWY-eD-BuB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="9"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonsNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cuU-ic-uMi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJT-xt-Evf" customClass="RoundButton" customModule="dojo1_calc" customModuleProvider="target">
+                                <rect key="frame" x="290" y="622" width="104" height="70"/>
+                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="sDH-aD-Km5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="-">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonsOperator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R4R-ce-uCP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afZ-YX-qmz" customClass="RoundButton" customModule="dojo1_calc" customModuleProvider="target">
+                                <rect key="frame" x="290" y="712" width="104" height="70"/>
+                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="f2g-lq-xhG"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="p7O-He-K2G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonsOperator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E5V-vN-Sie"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="272-z7-K37" customClass="RoundButton" customModule="dojo1_calc" customModuleProvider="target">
+                                <rect key="frame" x="290" y="532" width="104" height="70"/>
+                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="4gk-F1-7Wm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonsOperator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0oH-I3-0Lv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubo-uI-fVb" customClass="RoundButton" customModule="dojo1_calc" customModuleProvider="target">
+                                <rect key="frame" x="20" y="802" width="160" height="70"/>
+                                <color key="backgroundColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="G5x-s0-l0h"/>
+                                    <constraint firstAttribute="height" constant="70" id="hpl-Tb-vN6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="0"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonsNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nbb-HO-vIF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sHy-zg-evz" customClass="RoundButton" customModule="dojo1_calc" customModuleProvider="target">
+                                <rect key="frame" x="20" y="442" width="70" height="70"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="7N2-vU-bnx"/>
+                                    <constraint firstAttribute="height" constant="70" id="xpM-tf-hBy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="C">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="actionBtnC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vJW-a3-0Tg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKb-HG-yKG" customClass="RoundButton" customModule="dojo1_calc" customModuleProvider="target">
+                                <rect key="frame" x="110" y="442" width="70" height="70"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="2TF-OH-49V"/>
+                                    <constraint firstAttribute="width" constant="70" id="iN2-H4-C7H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="+/-">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9T5-qp-cZh" customClass="RoundButton" customModule="dojo1_calc" customModuleProvider="target">
+                                <rect key="frame" x="200" y="442" width="70" height="70"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="a2v-iV-n4T"/>
+                                    <constraint firstAttribute="width" constant="70" id="jnJ-PK-mg7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="%">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="99" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yhh-4I-PbD">
+                                <rect key="frame" x="20" y="257" width="374" height="165"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="165" id="N6v-d5-rGi"/>
+                                    <constraint firstAttribute="width" constant="374" id="xHi-Qe-SkB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYQ-a5-gU7" customClass="RoundButton" customModule="dojo1_calc" customModuleProvider="target">
+                                <rect key="frame" x="290" y="802" width="104" height="70"/>
+                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="IsX-J0-BPF"/>
+                                    <constraint firstAttribute="height" constant="70" id="a5f-fU-qm8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="=">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonIgual:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WjO-wq-d1S"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="971-ss-LYh" customClass="RoundButton" customModule="dojo1_calc" customModuleProvider="target">
+                                <rect key="frame" x="20" y="532" width="70" height="70"/>
+                                <color key="backgroundColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="asF-7g-eoC"/>
+                                    <constraint firstAttribute="width" constant="70" id="hyL-sR-s09"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="7"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonsNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sMv-wo-jax"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cgk-8W-7rU" customClass="RoundButton" customModule="dojo1_calc" customModuleProvider="target">
+                                <rect key="frame" x="290" y="442" width="104" height="70"/>
+                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="RH5-6m-Q39"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="nAq-80-cKm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="/">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonsOperator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Soh-Me-flL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="tintColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="O39-SA-pWx" firstAttribute="leading" secondItem="ubo-uI-fVb" secondAttribute="trailing" constant="20" id="0uu-8d-eKx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cYQ-a5-gU7" secondAttribute="trailing" constant="20" id="1Fl-ay-70A"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Yhh-4I-PbD" secondAttribute="trailing" constant="20" id="1YN-eV-dRc"/>
+                            <constraint firstItem="9Ap-0n-L1d" firstAttribute="top" secondItem="971-ss-LYh" secondAttribute="bottom" constant="20" id="2r0-Dv-LRE"/>
+                            <constraint firstItem="cYQ-a5-gU7" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="10" id="3kg-7e-MgO"/>
+                            <constraint firstItem="IyW-ff-Gmr" firstAttribute="top" secondItem="9Ap-0n-L1d" secondAttribute="bottom" constant="20" id="4SA-O1-JUG"/>
+                            <constraint firstItem="Yn6-Qn-ndC" firstAttribute="top" secondItem="8Yj-uD-Qd2" secondAttribute="bottom" constant="20" id="5pm-7I-ElL"/>
+                            <constraint firstItem="j2x-L1-ziG" firstAttribute="leading" secondItem="971-ss-LYh" secondAttribute="trailing" constant="20" id="5sW-By-xv2"/>
+                            <constraint firstAttribute="bottom" secondItem="ubo-uI-fVb" secondAttribute="bottom" constant="25" id="8I3-uW-CRH"/>
+                            <constraint firstItem="UsR-zu-B9i" firstAttribute="leading" secondItem="j2x-L1-ziG" secondAttribute="trailing" constant="20" id="9LK-jS-iQK"/>
+                            <constraint firstItem="sHy-zg-evz" firstAttribute="top" secondItem="Yhh-4I-PbD" secondAttribute="bottom" constant="20" id="9j9-LQ-Jdn"/>
+                            <constraint firstItem="ubo-uI-fVb" firstAttribute="top" secondItem="dIL-OK-CWk" secondAttribute="bottom" constant="20" id="C4N-rS-Vqm"/>
+                            <constraint firstItem="ptq-VD-8eW" firstAttribute="leading" secondItem="9Ap-0n-L1d" secondAttribute="trailing" constant="20" id="CCu-d1-kGt"/>
+                            <constraint firstItem="cYQ-a5-gU7" firstAttribute="leading" secondItem="O39-SA-pWx" secondAttribute="trailing" constant="20" id="EAm-Ub-4Ft"/>
+                            <constraint firstAttribute="bottom" secondItem="cYQ-a5-gU7" secondAttribute="bottom" constant="25" id="FHU-NB-AmM"/>
+                            <constraint firstItem="272-z7-K37" firstAttribute="leading" secondItem="UsR-zu-B9i" secondAttribute="trailing" constant="20" id="HOa-J9-WyL"/>
+                            <constraint firstItem="8Yj-uD-Qd2" firstAttribute="leading" secondItem="ptq-VD-8eW" secondAttribute="trailing" constant="20" id="Hdz-df-12v"/>
+                            <constraint firstItem="afZ-YX-qmz" firstAttribute="leading" secondItem="Yn6-Qn-ndC" secondAttribute="trailing" constant="20" id="IDK-3a-Uie"/>
+                            <constraint firstItem="ubo-uI-fVb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="IoX-uk-9dL"/>
+                            <constraint firstItem="UsR-zu-B9i" firstAttribute="top" secondItem="9T5-qp-cZh" secondAttribute="bottom" constant="20" id="NCf-lz-6L5"/>
+                            <constraint firstItem="272-z7-K37" firstAttribute="leading" secondItem="UsR-zu-B9i" secondAttribute="trailing" constant="20" id="Nb1-CL-tYM"/>
+                            <constraint firstAttribute="bottom" secondItem="O39-SA-pWx" secondAttribute="bottom" constant="25" id="QK4-Vw-ZqK"/>
+                            <constraint firstItem="Cgk-8W-7rU" firstAttribute="leading" secondItem="9T5-qp-cZh" secondAttribute="trailing" constant="20" id="Rih-3L-pZe"/>
+                            <constraint firstItem="uKb-HG-yKG" firstAttribute="leading" secondItem="sHy-zg-evz" secondAttribute="trailing" constant="20" id="S72-kT-C2S"/>
+                            <constraint firstItem="ptq-VD-8eW" firstAttribute="top" secondItem="j2x-L1-ziG" secondAttribute="bottom" constant="20" id="T2M-pd-Yh2"/>
+                            <constraint firstItem="272-z7-K37" firstAttribute="top" secondItem="Cgk-8W-7rU" secondAttribute="bottom" constant="20" id="TdA-uj-JKF"/>
+                            <constraint firstItem="O39-SA-pWx" firstAttribute="top" secondItem="Yn6-Qn-ndC" secondAttribute="bottom" constant="20" id="Tvg-fL-OBE"/>
+                            <constraint firstItem="Yhh-4I-PbD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="WEZ-G1-IjI"/>
+                            <constraint firstItem="sHy-zg-evz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="XuF-Ah-Io6"/>
+                            <constraint firstItem="UsR-zu-B9i" firstAttribute="leading" secondItem="j2x-L1-ziG" secondAttribute="trailing" constant="20" id="YiA-gz-o3Z"/>
+                            <constraint firstItem="8Yj-uD-Qd2" firstAttribute="top" secondItem="UsR-zu-B9i" secondAttribute="bottom" constant="20" id="Zq8-MI-Ui4"/>
+                            <constraint firstItem="dIL-OK-CWk" firstAttribute="leading" secondItem="IyW-ff-Gmr" secondAttribute="trailing" constant="20" id="ZxA-wJ-9cC"/>
+                            <constraint firstItem="971-ss-LYh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="bhc-Hv-e9C"/>
+                            <constraint firstItem="O39-SA-pWx" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="10" id="buN-NJ-9Vt"/>
+                            <constraint firstItem="9T5-qp-cZh" firstAttribute="leading" secondItem="uKb-HG-yKG" secondAttribute="trailing" constant="20" id="c23-kc-sw6"/>
+                            <constraint firstItem="HJT-xt-Evf" firstAttribute="leading" secondItem="8Yj-uD-Qd2" secondAttribute="trailing" constant="20" id="cQL-al-EYi"/>
+                            <constraint firstItem="Cgk-8W-7rU" firstAttribute="leading" secondItem="9T5-qp-cZh" secondAttribute="trailing" constant="20" id="dY9-zx-12d"/>
+                            <constraint firstItem="j2x-L1-ziG" firstAttribute="top" secondItem="uKb-HG-yKG" secondAttribute="bottom" constant="20" id="f3c-ei-jQQ"/>
+                            <constraint firstItem="ubo-uI-fVb" firstAttribute="top" secondItem="IyW-ff-Gmr" secondAttribute="bottom" constant="20" id="gsX-CP-wvq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HJT-xt-Evf" secondAttribute="trailing" constant="20" id="h7i-Tz-Ghq"/>
+                            <constraint firstItem="j2x-L1-ziG" firstAttribute="leading" secondItem="971-ss-LYh" secondAttribute="trailing" constant="20" id="jN0-dz-8Bj"/>
+                            <constraint firstItem="afZ-YX-qmz" firstAttribute="top" secondItem="HJT-xt-Evf" secondAttribute="bottom" constant="20" id="jnX-Or-Uav"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cgk-8W-7rU" secondAttribute="trailing" constant="20" id="jxI-D6-ibY"/>
+                            <constraint firstItem="ubo-uI-fVb" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="10" id="leF-4p-5Mf"/>
+                            <constraint firstItem="Yn6-Qn-ndC" firstAttribute="leading" secondItem="dIL-OK-CWk" secondAttribute="trailing" constant="20" id="n64-uS-b1c"/>
+                            <constraint firstItem="9Ap-0n-L1d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="nqp-hY-tZL"/>
+                            <constraint firstItem="uKb-HG-yKG" firstAttribute="leading" secondItem="sHy-zg-evz" secondAttribute="trailing" constant="20" id="o0y-OQ-8ax"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="272-z7-K37" secondAttribute="trailing" constant="20" id="oDg-ge-lYm"/>
+                            <constraint firstItem="cYQ-a5-gU7" firstAttribute="top" secondItem="afZ-YX-qmz" secondAttribute="bottom" constant="20" id="oN7-4W-rcc"/>
+                            <constraint firstItem="IyW-ff-Gmr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="oXO-aB-3ba"/>
+                            <constraint firstItem="9T5-qp-cZh" firstAttribute="leading" secondItem="uKb-HG-yKG" secondAttribute="trailing" constant="20" id="q7h-S4-7pp"/>
+                            <constraint firstItem="cYQ-a5-gU7" firstAttribute="leading" secondItem="O39-SA-pWx" secondAttribute="trailing" constant="20" id="rD3-bp-dwc"/>
+                            <constraint firstItem="Yn6-Qn-ndC" firstAttribute="leading" secondItem="dIL-OK-CWk" secondAttribute="trailing" constant="20" id="rEb-Oy-vEc"/>
+                            <constraint firstItem="ptq-VD-8eW" firstAttribute="leading" secondItem="9Ap-0n-L1d" secondAttribute="trailing" constant="20" id="tyt-J4-eGZ"/>
+                            <constraint firstItem="8Yj-uD-Qd2" firstAttribute="leading" secondItem="ptq-VD-8eW" secondAttribute="trailing" constant="20" id="uUk-P7-DTW"/>
+                            <constraint firstItem="dIL-OK-CWk" firstAttribute="top" secondItem="ptq-VD-8eW" secondAttribute="bottom" constant="20" id="ve1-6Y-2f6"/>
+                            <constraint firstItem="dIL-OK-CWk" firstAttribute="leading" secondItem="IyW-ff-Gmr" secondAttribute="trailing" constant="20" id="wOJ-M3-cAf"/>
+                            <constraint firstItem="HJT-xt-Evf" firstAttribute="leading" secondItem="8Yj-uD-Qd2" secondAttribute="trailing" constant="20" id="xMW-Qu-MA4"/>
+                            <constraint firstItem="971-ss-LYh" firstAttribute="top" secondItem="sHy-zg-evz" secondAttribute="bottom" constant="20" id="xzj-1Z-tRr"/>
+                            <constraint firstItem="O39-SA-pWx" firstAttribute="leading" secondItem="ubo-uI-fVb" secondAttribute="trailing" constant="20" id="y0L-9V-utv"/>
+                            <constraint firstItem="HJT-xt-Evf" firstAttribute="top" secondItem="272-z7-K37" secondAttribute="bottom" constant="20" id="yLw-0s-vpY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="afZ-YX-qmz" secondAttribute="trailing" constant="20" id="yun-j9-P7u"/>
+                            <constraint firstItem="afZ-YX-qmz" firstAttribute="leading" secondItem="Yn6-Qn-ndC" secondAttribute="trailing" constant="20" id="zvQ-dK-EpT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="TxtResult" destination="Yhh-4I-PbD" id="L6M-8T-lmH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="116.51785714285714"/>
+        </scene>
+    </scenes>
+</document>
