@@ -8,3 +8,8 @@ Definir uma classe Funcionário com nome, salário e cpf, depois defina as class
 Definir uma classe Veículo com cor, preço e quantidade de passageiros, depois defina as classes Carro que tem tamanho das rodas, e Avião que tem piloto e companhia aérea. queremos descobrir a quantidade de combustível que cada um dos veículos gasta por viagem, defina um método que recebe como parâmetro a distancia em Km e calcule a quantidade de combustível.
 Carro: tamanho das rodas * quantidade de passageiros * distancia
 Avião quantidade de passageiros * distancia
+
+### Grupo
+* Daniel Oliveira Nascimento
+* Gustavo Schwarz
+* Marcio Passos
