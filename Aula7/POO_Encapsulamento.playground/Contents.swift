@@ -98,3 +98,77 @@ public class Vendedor {
     vendedor.vender(quantidadeDePecas: 1, tipoDePeca: "vestido")
     print(vendedor.getSaldoEmConta())
 
+/*
+ Exercício proposto pelo professor Narlei.
+ 
+ Temos uma loja de carros, o nome dela é Venda Certa. Essa loja tem um estoque de quantos carros tem no total na loja. No momento, eles tem 50 carros em estoque.
+ Para sair um carro do estoque, esse carro precisa ser vendido, não há outro modo de retirar produtos no estoque. Esse estoque também nunca pode ficar negativo.
+ A fábrica falou pra loja que se eles conseguirem vender pelo menos 5 carros de uma só vez, a fábrica vai dar 1 carro de bonificação pra loja.
+ A fábrica também falou que, no momento que terminarem de vender todo estoque, a fábrica vai dar 2 carros de bonificação pra loja.
+ Teste de mesa:
+ tem 50
+ se vende 1 fica com 49
+ tem 49
+ se vende 5 fica com 44
+ ganha 1 da fábrica
+ tem 45
+ vende 44 fica com 1
+ ganha 1 da fábrica
+ tem 2
+ vende 2 fica com 0
+ ganha 2 da fábrica
+ tem 2
+ 
+ */
+
+public class Loja {
+    var estoqueCarros: Int
+    
+    init (estoqueCarros: Int) {
+        self.estoqueCarros = estoqueCarros
+    }
+    
+    func getEstoqueCarros() -> Int {
+        return estoqueCarros
+    }
+    
+    private func incrementarEstoqueCarros(estoqueCarros: Int) {
+        self.estoqueCarros += estoqueCarros
+    }
+    
+    private func decrementarEstoqueCarros(estoqueCarros: Int) {
+        self.estoqueCarros -= estoqueCarros
+    }
+    
+    func venderCarro(quantidade: Int) {
+        if getEstoqueCarros() == 0 {
+            //print("Bonus da fábrica: ganharam 2 carros")
+            incrementarEstoqueCarros(estoqueCarros: 2)
+        }
+        
+        if getEstoqueCarros() >= quantidade {
+            if quantidade >= 5 {
+                incrementarEstoqueCarros(estoqueCarros: 1)
+                //print("Vendeu 5 ou mais carros, ganhou um da fábrica")
+            }
+            decrementarEstoqueCarros(estoqueCarros: quantidade)
+        }
+        else {
+            print("Quantidade de carros insulficiente para realizar essa venda")
+        }
+    }
+}
+
+let vendaCerta = Loja(estoqueCarros: 50)
+
+vendaCerta.venderCarro(quantidade: 1)
+print("Quantidade estoque apos vender 1:", vendaCerta.getEstoqueCarros())
+vendaCerta.venderCarro(quantidade: 5)
+print("Quantidade estoque apos vender 5:", vendaCerta.getEstoqueCarros())
+vendaCerta.venderCarro(quantidade: 44)
+print("Quantidade estoque apos vender 44:", vendaCerta.getEstoqueCarros())
+vendaCerta.venderCarro(quantidade: 2)
+print("Quantidade estoque apos vender 2:", vendaCerta.getEstoqueCarros())
+vendaCerta.venderCarro(quantidade: 0)
+print("Quantidade estoque apos vender 0:", vendaCerta.getEstoqueCarros())
+vendaCerta.venderCarro(quantidade: 4)
