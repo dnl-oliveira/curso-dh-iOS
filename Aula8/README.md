@@ -49,4 +49,4 @@ Deve haver uma tela de login, o usuário deve informar o email e senha e escolhe
 Se o usuário tentar cadastrar um usuário já existente, deve exibir um alerta de erro, caso contrário, deve informar que foi cadastrado com sucesso.
 Quando o usuário logar com sucesso, deve exibir um alerta informando que logou com sucesso. Se o usuário tentar logar mas não existir ou estiver inválido, deve exibir um alerta de usuário inválido. Podem ser cadastrados infinitos usuários enquanto o app estiver aberto.
 
-### Projeto com os dois desafios estáo na pasta telaDeLogin
+### Projeto com os dois desafios está na pasta telaDeLogin
