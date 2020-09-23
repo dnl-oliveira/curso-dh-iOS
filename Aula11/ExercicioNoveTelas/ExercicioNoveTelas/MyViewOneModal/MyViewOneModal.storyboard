@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="A7F-aS-gyv">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My View One Modal View Controller-->
+        <scene sceneID="WAu-LG-BfB">
+            <objects>
+                <viewController id="A7F-aS-gyv" customClass="MyViewOneModalViewController" customModule="ExercicioNoveTelas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SDo-D4-86p">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My View One Modal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HhW-MQ-4OZ">
+                                <rect key="frame" x="20" y="94" width="374" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JkV-M9-8jZ">
+                                <rect key="frame" x="30" y="180" width="354" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="actionButtonClose:" destination="A7F-aS-gyv" eventType="touchUpInside" id="K9Z-TA-1bX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aBd-25-p9K"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HhW-MQ-4OZ" firstAttribute="top" secondItem="aBd-25-p9K" secondAttribute="top" constant="50" id="4Xi-wj-N5T"/>
+                            <constraint firstItem="aBd-25-p9K" firstAttribute="trailing" secondItem="HhW-MQ-4OZ" secondAttribute="trailing" constant="20" id="CQT-1V-VnL"/>
+                            <constraint firstItem="JkV-M9-8jZ" firstAttribute="top" secondItem="HhW-MQ-4OZ" secondAttribute="bottom" constant="50" id="OsI-tT-wmp"/>
+                            <constraint firstItem="JkV-M9-8jZ" firstAttribute="leading" secondItem="aBd-25-p9K" secondAttribute="leading" constant="30" id="ez9-vc-Ybu"/>
+                            <constraint firstItem="HhW-MQ-4OZ" firstAttribute="leading" secondItem="aBd-25-p9K" secondAttribute="leading" constant="20" id="unh-aT-Iqq"/>
+                            <constraint firstItem="aBd-25-p9K" firstAttribute="trailing" secondItem="JkV-M9-8jZ" secondAttribute="trailing" constant="30" id="v9p-Gu-gLs"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BNB-QA-7US" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141" y="119"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

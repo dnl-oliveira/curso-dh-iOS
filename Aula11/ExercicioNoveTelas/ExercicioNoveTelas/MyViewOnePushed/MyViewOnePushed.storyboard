@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jKH-Zj-8m2">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My View One Pushed View Controller-->
+        <scene sceneID="IJe-ah-r5r">
+            <objects>
+                <viewController id="jKH-Zj-8m2" customClass="MyViewOnePushedViewController" customModule="ExercicioNoveTelas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uoG-1H-JWI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My View One Pushed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tjx-YS-ax9">
+                                <rect key="frame" x="20" y="94" width="374" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCv-CF-f7J">
+                                <rect key="frame" x="30" y="180" width="354" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="actionButtonClose:" destination="jKH-Zj-8m2" eventType="touchUpInside" id="cci-XV-4ec"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Vih-WH-OeH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Tjx-YS-ax9" firstAttribute="leading" secondItem="Vih-WH-OeH" secondAttribute="leading" constant="20" id="E2l-LI-vUC"/>
+                            <constraint firstItem="Vih-WH-OeH" firstAttribute="trailing" secondItem="Tjx-YS-ax9" secondAttribute="trailing" constant="20" id="FUi-R8-c52"/>
+                            <constraint firstItem="Tjx-YS-ax9" firstAttribute="top" secondItem="Vih-WH-OeH" secondAttribute="top" constant="50" id="XEz-zV-U1j"/>
+                            <constraint firstItem="SCv-CF-f7J" firstAttribute="top" secondItem="Tjx-YS-ax9" secondAttribute="bottom" constant="50" id="fCL-E7-5CP"/>
+                            <constraint firstItem="SCv-CF-f7J" firstAttribute="leading" secondItem="Vih-WH-OeH" secondAttribute="leading" constant="30" id="hET-AP-h8M"/>
+                            <constraint firstItem="Vih-WH-OeH" firstAttribute="trailing" secondItem="SCv-CF-f7J" secondAttribute="trailing" constant="30" id="udm-Ke-xK7"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EUW-Pi-bY0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141" y="119"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

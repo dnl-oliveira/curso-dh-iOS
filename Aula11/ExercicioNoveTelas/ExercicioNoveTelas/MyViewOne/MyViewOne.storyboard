@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZOI-wS-80X">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My View One View Controller-->
+        <scene sceneID="IgD-2J-Fsj">
+            <objects>
+                <viewController id="ZOI-wS-80X" customClass="MyViewOneViewController" customModule="ExercicioNoveTelas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yXp-vM-nw5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View One" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXF-xp-lE3">
+                                <rect key="frame" x="20" y="94" width="374" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZaA-PI-wGy">
+                                <rect key="frame" x="30" y="180" width="354" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Modal"/>
+                                <connections>
+                                    <action selector="actionButtonModal:" destination="ZOI-wS-80X" eventType="touchUpInside" id="g7x-d9-Hhb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JkS-Kt-Ekh">
+                                <rect key="frame" x="30" y="266" width="354" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Pushed"/>
+                                <connections>
+                                    <action selector="actionButtonPushed:" destination="ZOI-wS-80X" eventType="touchUpInside" id="eut-5k-iDt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Evl-CL-v8s"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZaA-PI-wGy" firstAttribute="leading" secondItem="Evl-CL-v8s" secondAttribute="leading" constant="30" id="78M-8e-f3p"/>
+                            <constraint firstItem="JkS-Kt-Ekh" firstAttribute="top" secondItem="ZaA-PI-wGy" secondAttribute="bottom" constant="50" id="BgG-gs-0gA"/>
+                            <constraint firstItem="vXF-xp-lE3" firstAttribute="leading" secondItem="Evl-CL-v8s" secondAttribute="leading" constant="20" id="Q4f-UU-MY2"/>
+                            <constraint firstItem="Evl-CL-v8s" firstAttribute="trailing" secondItem="vXF-xp-lE3" secondAttribute="trailing" constant="20" id="RFc-We-fWl"/>
+                            <constraint firstItem="Evl-CL-v8s" firstAttribute="trailing" secondItem="ZaA-PI-wGy" secondAttribute="trailing" constant="30" id="cQg-NQ-LWR"/>
+                            <constraint firstItem="vXF-xp-lE3" firstAttribute="top" secondItem="Evl-CL-v8s" secondAttribute="top" constant="50" id="gv8-QE-Oks"/>
+                            <constraint firstItem="ZaA-PI-wGy" firstAttribute="top" secondItem="vXF-xp-lE3" secondAttribute="bottom" constant="50" id="rVF-nw-XqH"/>
+                            <constraint firstItem="Evl-CL-v8s" firstAttribute="trailing" secondItem="JkS-Kt-Ekh" secondAttribute="trailing" constant="30" id="uet-iQ-vGo"/>
+                            <constraint firstItem="JkS-Kt-Ekh" firstAttribute="leading" secondItem="Evl-CL-v8s" secondAttribute="leading" constant="30" id="zMh-Hd-43P"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ybz-dm-Jvt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-322" y="94"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
