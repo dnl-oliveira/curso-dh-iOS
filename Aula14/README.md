@@ -8,10 +8,14 @@
 - Dados do programador selecionado esta sendo exibido em uma label, imagem do programador foi arredondada.
 
 <h2 align="center">
-  <img src="https://raw.githubusercontent.com/dnl007/curso-dh-iOS/master/Aula14/listaCompra.png" />
+  <img src="https://raw.githubusercontent.com/dnl007/curso-dh-iOS/master/Aula14/devs.png" >
 </h2>
 
 #### Refaturando o app de lista de compras
 
 - App agora listando os produtos em uma tableview com uma celula personalizada
 - Foi incluido a edição e delete de itens a partir do tableview
+
+<h2 align="center">
+  <img src="https://raw.githubusercontent.com/dnl007/curso-dh-iOS/master/Aula14/listaCompra.png" >
+</h2>
