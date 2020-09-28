@@ -8,7 +8,7 @@
 - Dados do programador selecionado esta sendo exibido em uma label, imagem do programador foi arredondada.
 
 <h2 align="center">
-  <img src="https://www.igti.com.br/wp-content/uploads/2020/02/D.-Full-Stack.png" width="200px"/>
+  <img src="https://raw.githubusercontent.com/dnl007/curso-dh-iOS/master/Aula14/listaCompra.png" />
 </h2>
 
 #### Refaturando o app de lista de compras
