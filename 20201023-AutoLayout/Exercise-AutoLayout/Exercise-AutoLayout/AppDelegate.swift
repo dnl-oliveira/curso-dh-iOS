@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  20201023-AutoLayout
+//  Exercise-AutoLayout
 //
-//  Created by Daniel Nascimento on 23/10/20.
+//  Created by Daniel Oliveira on 10/23/20.
 //
 
 import UIKit
