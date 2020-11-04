@@ -1,0 +1,16 @@
+PODS:
+  - CardScanner (0.1.2)
+
+DEPENDENCIES:
+  - CardScanner
+
+SPEC REPOS:
+  trunk:
+    - CardScanner
+
+SPEC CHECKSUMS:
+  CardScanner: bfc18d8518a6c8d2817137816338e86156e4a2c4
+
+PODFILE CHECKSUM: 88e368779d8108686efa82f976e91c160fd37249
+
+COCOAPODS: 1.10.0
