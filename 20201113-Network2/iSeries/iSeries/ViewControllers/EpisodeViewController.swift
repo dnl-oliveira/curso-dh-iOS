@@ -10,14 +10,14 @@ import Alamofire
 
 class EpisodeViewController: UIViewController {
 
-    var seasson: Season?
+    var season: Season?
     var arrayEpisodes = [Episode]()
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        self.title = seasson?.name
+        self.title = season?.name
         loadEpisodes()
 
         // Do any additional setup after loading the view.
@@ -29,8 +29,8 @@ class EpisodeViewController: UIViewController {
     }
     
     func loadEpisodes() {
-        if let apiEpisode = self.seasson {
-            AF.request("http://api.tvmaze.com/shows/\(apiEpisode.id!)/episodes").responseJSON  { response in
+        if let apiSeason = self.season {
+            AF.request("http://api.tvmaze.com/shows/\(apiSeason.id!)/episodes").responseJSON  { response in
                 print(response)
                 if let arrayDictionary = response.value as? [[String: Any]] {
                     var arrayEpisodes = [Episode]()

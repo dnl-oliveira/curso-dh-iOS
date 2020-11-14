@@ -53,7 +53,7 @@ class SeasonViewController: UIViewController {
 extension SeasonViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let episode = UIStoryboard(name: "Episode", bundle: nil).instantiateInitialViewController() as? EpisodeViewController {
-            episode.seasson = arraySeasons[indexPath.row]
+            episode.season = arraySeasons[indexPath.row]
             navigationController?.pushViewController(episode, animated: true)
         }
     }
