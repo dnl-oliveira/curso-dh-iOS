@@ -1,0 +1,32 @@
+PODS:
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - NAMDatabase (1.0.6):
+    - FMDB (~> 2.7.5)
+  - Realm (10.2.0):
+    - Realm/Headers (= 10.2.0)
+  - Realm/Headers (10.2.0)
+  - RealmSwift (10.2.0):
+    - Realm (= 10.2.0)
+
+DEPENDENCIES:
+  - NAMDatabase
+  - RealmSwift
+
+SPEC REPOS:
+  trunk:
+    - FMDB
+    - NAMDatabase
+    - Realm
+    - RealmSwift
+
+SPEC CHECKSUMS:
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  NAMDatabase: c9560a156379f72780caeb0074306acdfc42194b
+  Realm: d7914ebf66bb182469726f997c4c38eff286aab0
+  RealmSwift: aad08b7dc8c732b7b5794286e9df83739bf834f1
+
+PODFILE CHECKSUM: c40dd0142280ea519948a405874ad5a723804b72
+
+COCOAPODS: 1.10.0
